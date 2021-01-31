@@ -8,11 +8,11 @@ import { Provider } from 'react-redux';
 import history from './utils/history';
 
 ReactDOM.render(
-  (<Router history={history}>
+  <Router history={history}>
     <Provider store={store}>
       <App />
     </Provider>
-  </Router>
-  ),
-  document.getElementById('root'));
+  </Router>,
+  document.getElementById('root')
+);
 serviceWorker.unregister();
